@@ -9,11 +9,12 @@ from app.resolvers import mutation, query
 from app.schema import type_defs
 from shared.database import db, migrate
 
+from config.settings import Config
+
 
 def create_app():
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://admin:admin@project_db:5432/suppliers'
-    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    app.config.from_object(Config)
 
     db.init_app(app)
     migrate.init_app(app, db)
