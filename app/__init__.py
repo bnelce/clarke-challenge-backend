@@ -1,6 +1,7 @@
 # __init__.py
 
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 from ariadne import make_executable_schema, graphql_sync, snake_case_fallback_resolvers
 from ariadne.explorer.playground import PLAYGROUND_HTML
 from ariadne.asgi import GraphQL
@@ -14,6 +15,7 @@ from config.settings import Config
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
+    CORS(app)
 
     db.init_app(app)
     migrate.init_app(app, db)

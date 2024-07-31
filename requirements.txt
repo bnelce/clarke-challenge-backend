@@ -27,3 +27,4 @@ urllib3==2.2.2
 Werkzeug==3.0.3
 psycopg2-binary==2.9.9
 Flask-Migrate==4.0.3
+Flask-CORS
