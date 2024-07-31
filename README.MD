@@ -34,7 +34,7 @@ Este projeto foi desenvolvido como parte de um desafio técnico para a posição
 
 - **Frontend:**
 
-  - A ser integrado (exemplo de stack sugerida: React, Vite, Apollo Client)
+  - [Clarke Challenge](https://github.com/bnelce/clarke-challenge-frontend)
 
 - **Infraestrutura e Testes:**
   - Docker
