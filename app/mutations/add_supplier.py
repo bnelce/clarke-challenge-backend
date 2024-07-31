@@ -1,5 +1,5 @@
 from ariadne import MutationType
-from app.models import db, Supplier
+from  app.domain.entities.suppiler import db, Supplier
 
 mutation = MutationType()
 

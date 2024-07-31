@@ -1,5 +1,5 @@
 from ariadne import QueryType
-from app.models import Supplier
+from app.domain.entities.suppiler import Supplier
 
 query = QueryType()
 

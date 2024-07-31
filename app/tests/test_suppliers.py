@@ -1,6 +1,6 @@
 import pytest
 from app import create_app, db
-from app.models import Supplier
+from app.domain.entities.suppiler import Supplier
 
 
 @pytest.fixture

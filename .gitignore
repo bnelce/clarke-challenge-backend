@@ -1,0 +1,58 @@
+# Arquivos de ambiente
+.env
+.venv/
+venv/
+ENV/
+env/
+*.env
+
+# Configuração do ambiente virtual
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+.Python
+db.sqlite3
+instance/
+
+# Arquivos e diretórios de cache
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.idea/
+.vscode/
+
+# Arquivos de configuração do editor
+*.sublime-project
+*.sublime-workspace
+*.vscode/
+
+# Diretórios específicos de IDE
+.idea/
+.vscode/
+*.swp
+
+# Arquivos de build
+build/
+dist/
+*.egg-info/
+
+# Diretórios de testes
+tests/
+
+# Configurações específicas do Docker
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
