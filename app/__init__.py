@@ -7,7 +7,7 @@ from ariadne.asgi import GraphQL
 
 from app.resolvers import mutation, query
 from app.schema import type_defs
-from database import db, migrate
+from shared.database import db, migrate
 
 
 def create_app():

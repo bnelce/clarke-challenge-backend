@@ -1,4 +1,4 @@
-from database import db
+from shared.database import db
 
 
 class Supplier(db.Model):
