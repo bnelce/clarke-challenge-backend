@@ -5,10 +5,9 @@ from ariadne import make_executable_schema, graphql_sync, snake_case_fallback_re
 from ariadne.explorer.playground import PLAYGROUND_HTML
 from ariadne.asgi import GraphQL
 
-from app.resolvers import mutation, query
-from app.schema import type_defs
-from shared.database import db, migrate
+from app.api.graphql.schema import mutation, query, type_defs
 
+from shared.database import db, migrate
 from config.settings import Config
 
 

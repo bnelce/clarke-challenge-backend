@@ -9,4 +9,4 @@ class Supplier(db.Model):
     cost_per_kwh = db.Column(db.Float, nullable=False)
     min_kwh = db.Column(db.Integer, nullable=False)
     total_clients = db.Column(db.Integer, nullable=False)
-    avg_rating = db.Column(db.Float, nullable=False)
+    average_rating = db.Column(db.Float, nullable=False)
