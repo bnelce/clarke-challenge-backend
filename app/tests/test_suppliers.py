@@ -24,7 +24,7 @@ def client(app):
 def test_add_supplier(client):
     mutation = """
     mutation {
-        addSupplier(name: "Test Supplier", logo: "http://logo.url", state: "Test State", cost_per_kwh: 0.10, min_kwh: 500, total_clients: 100, avg_rating: 4.5) {
+        addSupplier(name: "Test Supplier", logo: "http://logo.url", state: "Test State", cost_per_kwh: 0.10, min_kwh: 500, total_clients: 100, average_rating: 4.5) {
             name
             logo
         }
@@ -38,7 +38,7 @@ def test_add_supplier(client):
 
 def test_suppliers(client):
     supplier = Supplier(name="Test Supplier", logo="http://logo.url", state="Test State", cost_per_kwh=0.10,
-                        min_kwh=500, total_clients=100, avg_rating=4.5)
+                        min_kwh=500, total_clients=100, average_rating=4.5)
     db.session.add(supplier)
     db.session.commit()
 
